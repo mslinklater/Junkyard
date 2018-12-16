@@ -1,0 +1,3 @@
+/// @description
+
+scrSetSimulation(!global.physicsEnabled);
