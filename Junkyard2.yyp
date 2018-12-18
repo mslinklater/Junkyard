@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "71d36584-f565-49a1-94d8-1c7606ffe0a5",
+            "Value": {
+                "id": "4b8004fe-c173-44b6-ae8d-9a00f7f1256f",
+                "resourcePath": "fonts\\fntDebug\\fntDebug.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "748ab21b-832f-45da-8f10-423af2b352fd",
             "Value": {
                 "id": "efd50b02-f535-430b-9931-71b33cec0d34",
@@ -231,6 +239,14 @@
             }
         },
         {
+            "Key": "92e349fd-b11f-4aeb-a3f8-dad32602f6f7",
+            "Value": {
+                "id": "0909403e-d2b4-4353-a6ce-da9ab66edfe3",
+                "resourcePath": "scripts\\scrMacros\\scrMacros.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "98d41a44-f47f-42ce-9d83-cfda685fd4d3",
             "Value": {
                 "id": "c1ffb41b-5186-478e-8d90-a21456e6f9eb",
@@ -300,6 +316,14 @@
                 "id": "5ae98f11-5c01-46ca-9756-0c9586627249",
                 "resourcePath": "sprites\\sprUILeftArrow\\sprUILeftArrow.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b7d2b7be-2aee-42d6-88d6-58bfa4ac09fd",
+            "Value": {
+                "id": "6c11028a-8fd0-4324-a29a-03568fa6430a",
+                "resourcePath": "objects\\oBuildCameraManager\\oBuildCameraManager.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -434,7 +458,8 @@
     "script_order": [
         "6a3d24f1-875c-4e5b-b717-758948505213",
         "9dd522fe-ddf1-48b7-8100-45daeba03c70",
-        "9de1e11c-f5cf-4ae3-9ffa-5eaa1e131c91"
+        "9de1e11c-f5cf-4ae3-9ffa-5eaa1e131c91",
+        "92e349fd-b11f-4aeb-a3f8-dad32602f6f7"
     ],
     "tutorial": ""
 }
