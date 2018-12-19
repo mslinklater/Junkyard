@@ -1,5 +1,36 @@
 /// @description
 
+// right mouse-drag camera move
+
+if(!bDragging)
+{
+	// NOT dragging
+	if(mouse_check_button_pressed(mb_right))
+	{
+		bDragging = true;
+		startDragMouseX = mouse_x;
+		startDragMouseY = mouse_y;
+		startDragCameraX = xFocus;
+		startDragCameraY = yFocus;
+	}
+}
+else
+{
+	// dragging
+	if(mouse_check_button(mb_right))
+	{
+		// dragging is being held
+		xFocus -= (xFocus - (startDragCameraX - (mouse_x - startDragMouseX))) * 0.5;
+		yFocus -= (yFocus - (startDragCameraY - (mouse_y - startDragMouseY))) * 0.5;
+	}
+	else
+	{
+		// drag has been released
+		bDragging = false;
+	}
+}
+	
+
 // process zoom
 
 if(mouse_wheel_down())
