@@ -1,5 +1,10 @@
 /// @description
 
+// Update the window relative mouse positions
+
+windowMouseX = mouse_x - camera_get_view_x(view_camera[viewport]);
+windowMouseY = mouse_y - camera_get_view_y(view_camera[viewport]);
+
 // right mouse-drag camera move
 
 if(!bDragging)
@@ -8,8 +13,8 @@ if(!bDragging)
 	if(mouse_check_button_pressed(mb_right))
 	{
 		bDragging = true;
-		startDragMouseX = mouse_x;
-		startDragMouseY = mouse_y;
+		startDragMouseX = windowMouseX;
+		startDragMouseY = windowMouseY;
 		startDragCameraX = xFocus;
 		startDragCameraY = yFocus;
 	}
@@ -20,8 +25,8 @@ else
 	if(mouse_check_button(mb_right))
 	{
 		// dragging is being held
-		xFocus -= (xFocus - (startDragCameraX - (mouse_x - startDragMouseX))) * 0.5;
-		yFocus -= (yFocus - (startDragCameraY - (mouse_y - startDragMouseY))) * 0.5;
+		xFocus = startDragCameraX - (windowMouseX - startDragMouseX);
+		yFocus = startDragCameraY - (windowMouseY - startDragMouseY);
 	}
 	else
 	{

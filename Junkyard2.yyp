@@ -335,6 +335,14 @@
             }
         },
         {
+            "Key": "bcb2196f-c669-4880-ac09-bc40dbe06cb8",
+            "Value": {
+                "id": "c90c978d-f9e8-464f-87b4-f2198e72a9e8",
+                "resourcePath": "objects\\oPhysicsSetup\\oPhysicsSetup.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "bffab321-68db-4c79-acbb-45635c968b24",
             "Value": {
                 "id": "ad39016a-3a08-465c-9f26-b54344270f93",

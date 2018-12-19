@@ -10,3 +10,6 @@ startDragMouseX = -1;
 startDragMouseY = -1;
 startDragCameraX = -1;
 startDragCameraY = -1;
+
+windowMouseX = -1;
+windowMouseY = -1;

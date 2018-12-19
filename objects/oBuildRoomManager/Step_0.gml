@@ -10,6 +10,13 @@ if(!global.physicsEnabled)
 
 		instance_create_layer(xpos, ypos, "Instances", oPartSimple);
 	}
+	
+	// clear the area
+	if(keyboard_check_pressed(ord("C")))
+	{
+		// delete all objects which are based on the oPartRoot
+		instance_destroy(oPartRoot);
+	}
 }
 
 // Simulation toggle
@@ -18,3 +25,4 @@ if(keyboard_check_pressed(vk_space))
 {
 	scrSetSimulation(!global.physicsEnabled);
 }
+
